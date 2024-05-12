@@ -5,7 +5,7 @@ typedef vector<ll> vll;
 
 using namespace std;
 
-
+// MOD inverse = binpow(a, MOD - 2, MOD);
 ll binpow(ll a, ll b, ll m) {
     a %= m;
     ll res = 1;
