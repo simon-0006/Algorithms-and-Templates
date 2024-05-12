@@ -2,6 +2,10 @@
 
 using namespace std;
 
+struct graph {
+    
+};
+
 int main() {
     return 0;
 }
