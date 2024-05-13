@@ -1,7 +1,7 @@
 # Algorithms and Templates
 
 ## Graphs
- - Matching
+ - Matching (Algorithm of Hopcroft and Carp)
 
 ## Search And Sort
  - Binary Exponentiation
