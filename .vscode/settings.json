@@ -8,6 +8,7 @@
         "string": "cpp",
         "tuple": "cpp",
         "type_traits": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "iostream": "cpp"
     }
 }
