@@ -10,3 +10,11 @@
  - Binary Search
 
 
+## TODO:
+ - LCA
+ - 2-Sat
+ - FFT
+ - Segment Tree
+ - Lazy ST
+
+
