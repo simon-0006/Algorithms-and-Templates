@@ -12,7 +12,7 @@ typedef long long ll;
 typedef vector<ll> vll;
 typedef vector<vll> vvll;
 
-// Comparator
+// Personal Comparator
 class EdgeWeightCompare {
 public:
     bool operator() (pair<ll, pair<int, int> >& one, pair<ll, pair<int, int> >& two) {
