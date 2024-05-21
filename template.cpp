@@ -19,6 +19,22 @@ typedef vector<vi> vvi;
 const ll INF = 1e18;
 const int infP = 1e9 + 9;
 
+class myPairComp {
+public:
+    bool operator()(ii &first, ii &second) {
+        /** Logic of Comparator
+         * returns 1 <=> first < second (first is BEFORE second)
+         * returns 0 <=> first > second (first is AFTER  second)
+        */
+       if (first.first < second.first) { return 1; } 
+       else if (first.first > second.first) { return 0; } 
+       else {
+        if (first.second < second.second) { return 0; }
+        else if (first.second >= second.second) { return 1; }
+       }
+    }
+};
+
 
 void sol(int a, int b) {
     cout << "Solution" << endl;

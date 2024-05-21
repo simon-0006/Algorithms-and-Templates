@@ -21,11 +21,11 @@ const int infP = 1e9 + 9;
 
 vll z_function(string &s) {
     int n = s.size();
-    vll z(n); z[0] == 0;
+    vll z(n); z[0] = 0;
     ll l = 0, r = 0;
-    for (int i = 0; i < n; i++) {
+    for (int i = 1; i < n; i++) {
         if (i < r) {
-            z[i] = std::min(r-i+1,z[i-l]);
+            z[i] = std::min(r-i,z[i-l]);
         }
         while (i + z[i] < n && s[z[i]] == s[i + z[i]]) {
             z[i]++;
