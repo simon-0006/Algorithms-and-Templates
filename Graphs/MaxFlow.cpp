@@ -51,6 +51,7 @@ void MaxFlow::deref() {
     delete[] adj;
 }
 
+// O(n + m)
 bool MaxFlow::bfs() {
     par = new int[V];
     for (int i = 0; i < V; i++) par[i] = -1;
