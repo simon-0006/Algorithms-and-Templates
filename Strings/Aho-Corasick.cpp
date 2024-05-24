@@ -23,11 +23,11 @@ const int K = 26; /* Has to be adjusted if there are also upper case letters */
 
 struct Vertex {
     int next[K];
-    bool output = false;
-    int p = -1;
-    char pch;
-    int link = -1;
-    int go[K];
+    bool output = false;    /* Can be adjusted to an int */
+    int p = -1;             /* Parent Vertex */
+    char pch;               /* Character between parent and vertex */
+    int link = -1;          /* Link to longest Suffix */
+    int go[K];              /* Cache for transitinons */
 
     Vertex(int p=-1, char ch='$') : p(p), pch(ch) {
         fill(begin(next), end(next), -1);
