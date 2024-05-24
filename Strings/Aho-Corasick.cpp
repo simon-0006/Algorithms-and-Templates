@@ -19,7 +19,7 @@ typedef vector<vi> vvi;
 const ll INF = 1e18;
 const int infP = 1e9 + 9;
 
-const int K = 26;
+const int K = 26; /* Has to be adjusted if there are also upper case letters */
 
 struct Vertex {
     int next[K];
