@@ -36,7 +36,7 @@ public:
 };
 
 
-void sol(int a, int b) {
+void sol(ll a, ll b) {
     cout << "Solution" << endl;
 }
 
