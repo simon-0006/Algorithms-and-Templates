@@ -16,8 +16,23 @@ typedef vector<vii> vvii;
 typedef vector<int> vi;
 typedef vector<vi> vvi;
 
+typedef tuple<ll, ll, ll> State; /* Distance, Node, Previous */
+
 const ll INF = 1e18;
 const int infP = 1e9 + 9;
+
+#define eb emplace_back;
+#define cinVec(vec)  { for (int i = 0; i < vec.size(); i++) cin >> vec[i]; }
+#define coutVec(vec) { for (int i = 0; i < vec.size(); i++) cout << vec[i] << " "; cout << endl; }
+
+// for debug
+#define error(args...) { string _s = #args; replace(_s.begin(), _s.end(), ',', ' '); stringstream _ss(_s); istream_iterator<string> _it(_ss); err(_it, args); }
+void err(istream_iterator<string> it) {}
+template<typename T, typename... Args>
+void err(istream_iterator<string> it, T a, Args... args) {
+	cerr << *it << " = " << a << endl;
+	err(++it, args...);
+}
 
 class myPairComp {
 public:
