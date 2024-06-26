@@ -46,6 +46,7 @@ public:
        else {
         if (first.second < second.second) { return 0; }
         else if (first.second >= second.second) { return 1; }
+        return 0;
        }
     }
 };
@@ -58,7 +59,7 @@ void sol(ll a, ll b) {
 
 int main() {
     int t; cin >> t;
-    int a,b;
+    ll a,b;
     while (t--) {
         cin >> a >> b;
         sol(a, b);
