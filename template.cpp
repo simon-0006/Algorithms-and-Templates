@@ -52,17 +52,19 @@ public:
 };
 
 
-void sol(ll a, ll b) {
-    cout << "Solution" << endl;
+ll sol(ll n, ll m) {
+    ll tot = 0;
+
+    return tot;
 }
 
 
 int main() {
     int t; cin >> t;
-    ll a,b;
+    ll n,m;
     while (t--) {
-        cin >> a >> b;
-        sol(a, b);
+        cin >> n >> m;
+        cout << sol(n, m) << endl;
     }
     return 0;
 }
