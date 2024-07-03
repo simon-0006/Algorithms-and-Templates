@@ -108,7 +108,6 @@ int MyGraph::kruskal() {
 
 
 int main() {
-    cout << "hello" << endl;
     int t; cin >> t;
     while (t --) {
         int V,E; cin >> V >> E;
