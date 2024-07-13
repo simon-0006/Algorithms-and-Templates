@@ -19,9 +19,12 @@ typedef vector<vi> vvi;
 typedef tuple<ll, ll, ll> State; /* Distance, Node, Previous */
 
 const ll INF = 1e18;
-const int infP = 1e9 + 9;
+const int infP = 1e9 + 7;
 
 #define eb emplace_back;
+#define ff first
+#define ss second
+
 #define cinVec(vec)  { for (int i = 0; i < vec.size(); i++) cin >> vec[i]; }
 #define coutVec(vec) { for (int i = 0; i < vec.size(); i++) cout << vec[i] << " "; cout << endl; }
 
@@ -52,12 +55,7 @@ public:
 };
 
 
-int speed = []() {
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
-    return 0;
-}();
+int speed = []() { ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL); return 0; }();
 
 
 ll sol(ll n, ll m) {
